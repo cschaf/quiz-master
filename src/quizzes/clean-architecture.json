@@ -1,0 +1,225 @@
+{
+    "title": "Clean Architecture and SOLID Principles",
+    "questions": [
+      {
+        "title": "What is the main goal of Clean Architecture?",
+        "description": "Clean Architecture is a software design philosophy that separates the elements of a design into ring levels. The main rule of Clean Architecture is that code dependencies can only move from the outer levels inward. Code on the inner layers can have no knowledge of functions on the outer layers.",
+        "image": "https://blog.cleancoder.com/uncle-bob/images/2012-08-13-the-clean-architecture/CleanArchitecture.jpg",
+        "answers": [
+          {
+            "text": "To create a system that is easy to maintain and evolve over time.",
+            "correct": true
+          },
+          {
+            "text": "To make the system as fast as possible."
+          },
+          {
+            "text": "To use the latest and greatest technologies."
+          },
+          {
+            "text": "To write as little code as possible."
+          }
+        ]
+      },
+      {
+        "title": "What does the 'S' in SOLID stand for?",
+        "description": "The Single Responsibility Principle states that a class should have only one reason to change. This means that a class should only have one job. If a class has more than one job, it becomes coupled. A change to one of its jobs could lead to a change in another one of its jobs.",
+        "image": "https://i.ytimg.com/vi/g1bS4a_i6iI/maxresdefault.jpg",
+        "answers": [
+          {
+            "text": "Single Responsibility Principle",
+            "correct": true
+          },
+          {
+            "text": "Software Development Principle"
+          },
+          {
+            "text": "System Design Principle"
+          },
+          {
+            "text": "Standard Object Library"
+          }
+        ]
+      },
+      {
+        "title": "What does the 'O' in SOLID stand for?",
+        "description": "The Open/Closed Principle states that software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification. This means that you should be able to add new functionality to a system without having to change the existing code.",
+        "image": "https://i.ytimg.com/vi/zJ6yF4I-5D4/maxresdefault.jpg",
+        "answers": [
+          {
+            "text": "Open/Closed Principle",
+            "correct": true
+          },
+          {
+            "text": "Object-Oriented Principle"
+          },
+          {
+            "text": "Operational Principle"
+          },
+          {
+            "text": "Ordered-Operations Principle"
+          }
+        ]
+      },
+      {
+        "title": "What does the 'L' in SOLID stand for?",
+        "description": "The Liskov Substitution Principle states that subtypes must be substitutable for their base types. This means that if you have a function that takes a base type, you should be able to pass it a subtype without causing any problems.",
+        "image": "https://i.ytimg.com/vi/6sfrO-4M05c/maxresdefault.jpg",
+        "answers": [
+          {
+            "text": "Liskov Substitution Principle",
+            "correct": true
+          },
+          {
+            "text": "Layered Architecture Principle"
+          },
+          {
+            "text": "Low-Level Design Principle"
+          },
+          {
+            "text": "Lexical Scoping Principle"
+          }
+        ]
+      },
+      {
+        "title": "What does the 'I' in SOLID stand for?",
+        "description": "The Interface Segregation Principle states that clients should not be forced to depend on interfaces they do not use. This means that you should create small, specific interfaces rather than large, general-purpose ones.",
+        "image": "https://i.ytimg.com/vi/qUh0z_p52g8/maxresdefault.jpg",
+        "answers": [
+          {
+            "text": "Interface Segregation Principle",
+            "correct": true
+          },
+          {
+            "text": "Inheritance Principle"
+          },
+          {
+            "text": "Implementation Principle"
+          },
+          {
+            "text": "Initial Interface Principle"
+          }
+        ]
+      },
+      {
+        "title": "What does the 'D' in SOLID stand for?",
+        "description": "The Dependency Inversion Principle states that high-level modules should not depend on low-level modules. Both should depend on abstractions. Abstractions should not depend on details. Details should depend on abstractions.",
+        "image": "https://i.ytimg.com/vi/NnZZM7I2D48/maxresdefault.jpg",
+        "answers": [
+          {
+            "text": "Dependency Inversion Principle",
+            "correct": true
+          },
+          {
+            "text": "Data-Centric Principle"
+          },
+          {
+            "text": "Domain-Driven Design Principle"
+          },
+          {
+            "text": "Delegation Principle"
+          }
+        ]
+      },
+      {
+        "title": "What is the Dependency Rule in Clean Architecture?",
+        "description": "The Dependency Rule states that source code dependencies can only point inwards. Nothing in an inner circle can know anything at all about something in an outer circle. In particular, the name of something declared in an outer circle must not be mentioned by the code in an inner circle. That includes, functions, classes. variables, or any other named software entity.",
+        "image": "https://i.ytimg.com/vi/StK_Q-E4v2s/maxresdefault.jpg",
+        "answers": [
+          {
+            "text": "Source code dependencies can only point inwards.",
+            "correct": true
+          },
+          {
+            "text": "Source code dependencies can only point outwards."
+          },
+          {
+            "text": "Source code dependencies can point in any direction."
+          },
+          {
+            "text": "Source code dependencies are not allowed."
+          }
+        ]
+      },
+      {
+        "title": "What are the layers of Clean Architecture?",
+        "description": "Clean Architecture is composed of four layers: Entities, Use Cases, Interface Adapters, and Frameworks & Drivers. The inner layers contain the business logic, while the outer layers contain the implementation details.",
+        "image": "https://i.ytimg.com/vi/2d_t_eO_3x4/maxresdefault.jpg",
+        "answers": [
+          {
+            "text": "Entities, Use Cases, Interface Adapters, Frameworks & Drivers",
+            "correct": true
+          },
+          {
+            "text": "Presentation, Application, Domain, Infrastructure"
+          },
+          {
+            "text": "UI, Business Logic, Data Access"
+          },
+          {
+            "text": "Controller, Service, Repository, Model"
+          }
+        ]
+      },
+      {
+        "title": "What is the role of Entities in Clean Architecture?",
+        "description": "Entities encapsulate enterprise-wide business rules. An entity can be an object with methods, or it can be a set of data structures and functions. It doesn't matter so long as the entities could be used by many different applications in the enterprise.",
+        "image": "https://i.ytimg.com/vi/1_u_pC6s1-s/maxresdefault.jpg",
+        "answers": [
+          {
+            "text": "To encapsulate enterprise-wide business rules.",
+            "correct": true
+          },
+          {
+            "text": "To handle application-specific business rules."
+          },
+          {
+            "text": "To convert data from one format to another."
+          },
+          {
+            "text": "To define the database schema."
+          }
+        ]
+      },
+      {
+        "title": "What is the role of Use Cases in Clean Architecture?",
+        "description": "The software in this layer contains application-specific business rules. It encapsulates and implements all of the use cases of the system. These use cases orchestrate the flow of data to and from the entities, and direct those entities to use their enterprise-wide business rules to achieve the goals of the use case.",
+        "image": "https://i.ytimg.com/vi/C_qr_y43d-M/maxresdefault.jpg",
+        "answers": [
+          {
+            "text": "To handle application-specific business rules.",
+            "correct": true
+          },
+          {
+            "text": "To encapsulate enterprise-wide business rules."
+          },
+          {
+            "text": "To interact with the database."
+          },
+          {
+            "text": "To manage user authentication."
+          }
+        ]
+      },
+      {
+        "title": "What is the role of Interface Adapters in Clean Architecture?",
+        "description": "The software in this layer is a set of adapters that convert data from the format most convenient for the use cases and entities, to the format most convenient for some external agency such as the Database or the Web. It is this layer, for example, that will wholly contain the MVC architecture of a GUI. The Presenters, Views, and Controllers all belong in here.",
+        "image": "https://i.ytimg.com/vi/NYeRGD3R2bU/maxresdefault.jpg",
+        "answers": [
+          {
+            "text": "To convert data between use cases and external agencies.",
+            "correct": true
+          },
+          {
+            "text": "To implement the business logic of the application."
+          },
+          {
+            "text": "To define the database schema."
+          },
+          {
+            "text": "To manage user sessions."
+          }
+        ]
+      }
+    ]
+  }

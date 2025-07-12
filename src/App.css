@@ -1,0 +1,316 @@
+/* General Body Styles */
+body {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Main Container */
+.container {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+/* Headings */
+h1, h2 {
+  font-weight: 700;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+/* Lead Paragraph */
+.lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+/* Buttons */
+.btn {
+  border-radius: 50px;
+  padding: 12px 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #ff8c00 0%, #ff0084 100%);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 7px 20px rgba(0, 0, 0, 0.3);
+}
+
+.btn-secondary {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Specific button for removing answers */
+.btn-remove-answer {
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: none; /* Override uppercase */
+    letter-spacing: 0; /* Override letter-spacing */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Card Styles */
+.card {
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  color: #fff;
+}
+
+.card:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+  transform: scale(1.05);
+}
+
+.card-body {
+  padding: 2rem;
+}
+
+.card-text {
+    font-size: 1.1rem;
+}
+
+.card-img-top, .img-fluid {
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Quiz Progress Bar */
+.quiz-progress-container {
+  display: flex;
+  width: 100%;
+  height: 10px; /* Adjust height as needed */
+  background-color: rgba(255, 255, 255, 0.8); /* New background color */
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.quiz-progress-segment {
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.4); /* Default background for segments */
+  transition: background-color 0.3s ease;
+  border-right: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.quiz-progress-segment:last-child {
+  border-right: none;
+}
+
+.quiz-progress-segment.answered {
+  background-color: #ff8c00; /* New fill color */
+}
+.quiz-finished-container {
+    text-align: center;
+    padding: 40px;
+}
+
+/* Start Page Specifics */
+.start-page-container {
+    text-align: center;
+}
+
+pre {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    color: #f0f0f0;
+}
+
+.quiz-creator-pre {
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    overflow-x: auto;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    max-height: 200px; /* Adjust this value as needed */
+    overflow-y: auto;
+}
+
+.quiz-creator-pre code {
+    word-break: break-all;
+}
+
+code {
+    font-family: 'Fira Code', 'Courier New', monospace;
+}
+
+/* File Input */
+.form-control-file {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 15px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.form-control-file::file-selector-button {
+    background: linear-gradient(135deg, #ff8c00 0%, #ff0084 100%);
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    padding: 8px 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.form-control-file::file-selector-button:hover {
+    transform: translateY(-2px);
+}
+
+
+.card.border-primary {
+    border-color: #ff8c00 !important;
+    box-shadow: 0 0 15px rgba(255, 140, 0, 0.5);
+}
+
+/* Accordion Styles */
+.accordion-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 1rem;
+    border-radius: 15px !important; /* Added important to override bootstrap */
+}
+
+.accordion-header {
+    border-radius: 15px;
+}
+
+.accordion-button {
+    background-color: transparent;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 15px !important;
+}
+
+.accordion-button:not(.collapsed) {
+    background: linear-gradient(135deg, #ff8c00 0%, #ff0084 100%);
+    color: #fff;
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-body {
+    color: #eee;
+}
+
+.ai-quiz-accordion-body {
+    overflow-x: auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.quiz-creator-container {
+    width: 960px; /* Adjust this value as needed */
+    max-width: 100%;
+}
+
+.answer-cards .card {
+    height: 100%;
+}
+
+.card.bg-dark {
+    background-color: rgba(0,0,0,0.2) !important;
+}
+
+.form-control {
+    background-color: rgba(0,0,0,0.2);
+    color: #fff;
+    border: 1px solid rgba(255,255,255,0.3);
+}
+
+.form-control::placeholder {
+    color: #fff;
+}
+
+.form-control:focus {
+    background-color: rgba(0,0,0,0.3);
+    color: #fff;
+    border-color: #ff8c00;
+    box-shadow: 0 0 10px rgba(255, 140, 0, 0.5);
+}
+
+.form-check-input:checked {
+    background-color: #ff8c00;
+    border-color: #ff8c00;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 576px) {
+  .container {
+    padding: 15px;
+  }
+  h1 {
+    font-size: 1.8rem;
+  }
+  .card-body {
+    padding: 1.5rem;
+  }
+  .btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .container {
+    max-width: 960px;
+  }
+}
